@@ -1,16 +1,25 @@
-# React + Vite
+# Shoe Store - Payment Integration with React Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an e-commerce shoe website built with **React**, **React Router DOM**, and **Context API**. It features full shopping cart functionality and a seamless payment workflow.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Global State Management:** Uses React Context API (`CartContext`) to manage cart items and calculate total prices across pages.
+- **Routing:** Navigates between Home (`/`) and Payment Page (`/payment`) using `react-router-dom`.
+- **Cart Operations:** Users can add products, increase/decrease item quantities, and view cart updates in real time.
+- **Payment Gateway UI:** Provides payment options (Cash on Delivery / Credit Card) and a form for credit card details.
+- **Cart Persistence across Navigation:** Items added on the Home page stay intact on the Payment page and vice-versa.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- React Router DOM v6
+- Context API & Custom Hooks (`useContext`, `useState`)
+- Plain CSS3 (Flexbox & Grid Layouts)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone this repository:
+   ```bash
+   git clone <your-repository-url>
+   cd shoe-store-payment
