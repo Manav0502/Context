@@ -1,0 +1,83 @@
+.payment-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.payment-form-container {
+  background-color: #fbf9f5;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #ebdcc4;
+}
+
+.payment-options {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2b231a;
+  cursor: pointer;
+}
+
+.credit-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  color: #2b231a;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #c0b29e;
+  background-color: #faf6f0;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #8c7355;
+  background-color: #ffffff;
+}
+
+.confirm-payment-btn {
+  background-color: #d8c7ad;
+  border: 1px solid #bba689;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #2b231a;
+  width: fit-content;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.confirm-payment-btn:hover {
+  background-color: #cbb79b;
+}
+
+@media (max-width: 900px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+}
